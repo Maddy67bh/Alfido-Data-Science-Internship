@@ -122,9 +122,9 @@ markdown_to_pdf(
         "Use cuisine popularity and review volume to guide restaurant discovery content.",
         "Validate missing values, duplicate records, currency units and dataset source before business decisions."
     ],
-    ["task1_zomato_rating_distribution.png",
-     "task1_zomato_top_cities.png",
-     "task1_zomato_top_cuisines.png"]
+    ["task1_city_average_rating.png",
+     "task1_cuisine_average_rating.png",
+     "task1_cost_vs_rating.png"]
 )
 
 markdown_to_pdf(
@@ -138,7 +138,7 @@ markdown_to_pdf(
         "Choose any deployment threshold only after validation, calibration and cost analysis.",
         "Treat results as educational dataset performance, not as a real lending decision or guarantee."
     ],
-    ["task2_loan_class_balance.png", "task2_loan_confusion_matrix.png"]
+    ["task2_logistic_confusion_matrix.png"]
 )
 
 markdown_to_pdf(
@@ -152,8 +152,7 @@ markdown_to_pdf(
         "Run controlled hashtag and caption experiments, changing one major factor at a time.",
         "Review results weekly and adapt the content calendar to the best-performing verified patterns."
     ],
-    ["task3_instagram_media_engagement.png",
-     "task3_instagram_category_engagement.png"]
+    ["task3_media_type_interactions.png"]
 )
 
 markdown_to_pdf(
@@ -167,7 +166,7 @@ markdown_to_pdf(
         "Segment customers only after confirming the meaning and reliability of customer identifiers.",
         "Present findings as descriptive analytics; forecast only after a validated time-based evaluation."
     ],
-    ["task4_monthly_sales.png", "task4_sales_by_category.png",
+    ["task4_monthly_revenue.png", "task4_revenue_by_category.png",
      "task4_profit_by_category.png"]
 )
 

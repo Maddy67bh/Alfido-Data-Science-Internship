@@ -2,32 +2,28 @@
 
 ## Dataset and methodology
 
-- Source: locally available CSV in `data/raw/`.
-- Findings describe this dataset only; they are not automatically generalizable.
+- Source: `data/raw/loan_approval_dataset.csv`.
+- The latest saved experiment compares Logistic Regression and Decision Tree.
+- Metrics below come from `outputs/task2_model_comparison.csv`.
+- The results describe this dataset and evaluation split only.
 
-## Findings
+## Latest model comparison
 
-- Rows: 4,269; columns: 13.
-- Duplicate rows: 0.
-- Cells missing values: 0.
-- Target class counts: approved=2,656; rejected=1,613.
-- Random Forest held-out test accuracy: 0.9754 (97.5%); test records: 854.
-- Classification report:
+- **Logistic Regression** — accuracy: 0.9356 (93.56%); ROC-AUC (one-vs-rest): 0.9748.
+- **Decision Tree** — accuracy: 0.9778 (97.78%); ROC-AUC (one-vs-rest): 0.9938.
 
-```
-              precision    recall  f1-score   support
+- Highest ROC-AUC in this comparison: Decision Tree (0.9938). This does not by itself establish that the model is suitable for real lending decisions.
 
-    approved       0.98      0.98      0.98       531
-    rejected       0.97      0.97      0.97       323
+## Interpretation and limitations
 
-    accuracy                           0.98       854
-   macro avg       0.97      0.97      0.97       854
-weighted avg       0.98      0.98      0.98       854
-
-```
-- Confusion matrix saved to `outputs/task2_loan_confusion_matrix.csv` and PNG.
-- This is a baseline on a public sample dataset. It does not establish real-world lending suitability, fairness, calibration, or causal validity.
+- Compare precision, recall, F1-score and confusion-matrix errors before choosing a model.
+- Check for target leakage, preprocessing leakage, class imbalance and appropriate stratification.
+- Assess calibration, subgroup fairness and the costs of false approvals and false rejections.
+- These educational results are not a credit decision system and do not demonstrate real-world lending suitability.
 
 ## Outputs
 
-Charts and supporting CSV files are saved in `outputs/`.
+- `outputs/task2_model_comparison.csv`
+- `outputs/task2_logistic_regression_report.txt`
+- `outputs/task2_decision_tree_report.txt`
+- `outputs/task2_logistic_confusion_matrix.png`

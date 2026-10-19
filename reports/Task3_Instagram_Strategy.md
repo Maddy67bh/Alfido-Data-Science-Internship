@@ -24,3 +24,7 @@
 ## Outputs
 
 Charts and supporting CSV files are saved in `outputs/`.
+
+## Posting-time limitation
+
+The current hourly summary contains only one observed hour (9) across 29,999 records. This does not provide a meaningful comparison of posting times. Verify the source timestamps and test multiple hours before recommending an optimal posting time.

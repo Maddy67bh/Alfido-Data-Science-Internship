@@ -2,22 +2,38 @@
 
 ## Dataset and methodology
 
-- Source: locally available CSV in `data/raw/`.
-- Findings describe this dataset only; they are not automatically generalizable.
+- Source: `data/raw/business_sales_customers.csv`.
+- Records: 30,000; columns: 41.
+- Duplicate full rows: 0.
+- Missing cells across the dataset: 0.
+- Revenue metric: sum of `Order_Amount`, grouped by the dataset's Year and Month fields.
+- Profit metric: sum of `Profit_Amount`, grouped by `Product_Category`.
+- Currency and units were not independently verified; monetary figures are reported in source units.
 
 ## Findings
 
-- Rows: 30,000; columns: 41.
-- Duplicate rows: 0.
-- Cells missing values: 0.
-- Order Amount: total 11,370,043.99; average 379.00; median 171.03. Units/currency are not independently verified.
-- Profit Amount: total 2,215,916.27; average 73.86; median 37.00. Units/currency are not independently verified.
-- Unique customers: 8,683.
-- Category with highest recorded order amount: Electronics (6,320,059.31).
-- Monthly trend covers 48 months after date parsing.
-- Return field value counts: No=26,967; Yes=3,033.
-- Order status counts: Delivered=19,497; Shipped=3,469; Returned=3,033; Processing=2,230; Cancelled=1,771.
+- Total recorded order amount: 11,370,043.99.
+- Average recorded order amount: 379.00.
+- Median recorded order amount: 171.03.
+- Total recorded profit amount: 2,215,916.27.
+- Monthly revenue series contains 48 month groups with valid year/month fields.
+- Unique customers according to `Customer_ID`: 8,683.
+- Highest recorded revenue category: Electronics (6,320,059.31).
+- Highest recorded total profit category: Electronics (1,040,688.00).
+
+## Business recommendations
+
+- Monitor monthly revenue and profit separately; do not use discount amount as a proxy for revenue.
+- Compare category revenue with category profit before allocating promotions.
+- Validate currency, units, return handling, order statuses and duplicate order identifiers before operational decisions.
+- Treat the results as descriptive analytics, not proof that a category or promotion caused better performance.
+- Validate any forecast on a chronological holdout period before using it for planning.
 
 ## Outputs
 
-Charts and supporting CSV files are saved in `outputs/`.
+- `outputs/task4_monthly_revenue.csv`
+- `outputs/task4_monthly_revenue.png`
+- `outputs/task4_sales_by_category_summary.csv`
+- `outputs/task4_profit_by_category_summary.csv`
+- `outputs/task4_revenue_by_category.png`
+- `outputs/task4_profit_by_category.png`
