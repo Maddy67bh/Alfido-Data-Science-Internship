@@ -22,3 +22,35 @@ Open and run each notebook from the repository root. Add each original dataset t
 
 ## Submission quality
 Reports currently contain evidence-required sections, not fabricated findings. Replace every instruction with verified outputs, cite data sources, run all notebook cells, inspect charts, and export final reports before submitting. Confirm all four tasks and deliverable formats against the official assignment instructions.
+
+
+<!-- FINAL DELIVERABLES SECTION -->
+## Project deliverables
+
+This repository contains notebooks, analysis reports, generated visualizations,
+and supplementary PDF deliverables for the projects documented here.
+
+### Tasks
+1. **Zomato restaurant analysis** — `notebooks/Task1_Zomato_Analysis.ipynb`
+2. **Loan approval prediction** — `notebooks/Task2_Loan_Approval_Prediction.ipynb`
+3. **Instagram engagement analysis** — `notebooks/Task3_Instagram_Engagement_Analysis.ipynb`
+4. **Business sales capstone (optional)** — `notebooks/Task4_Business_Sales_Analytics.ipynb`
+
+### PDF deliverables
+- `deliverables/Task1_Zomato_Analysis_Report.pdf`
+- `deliverables/Task2_Loan_Model_Report.pdf`
+- `deliverables/Task3_Instagram_Strategy.pdf`
+- `deliverables/Task4_Business_Sales_Capstone.pdf`
+
+### Run locally
+```bash
+pip install pandas matplotlib scikit-learn jupyter nbformat nbclient reportlab
+jupyter notebook
+```
+
+### Reproducibility and limitations
+- Input files are located in `data/raw/`.
+- Review each dataset's original source and usage terms before redistribution.
+- Model metrics describe performance on the available dataset and split only.
+- Thresholds, correlations and descriptive trends do not establish causation.
+- Confirm task requirements against the official Alfido assignment before submission.
