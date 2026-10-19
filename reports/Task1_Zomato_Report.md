@@ -1,17 +1,21 @@
-# Task 1 — Zomato Restaurant & Review Analysis
+# Task 1: Zomato Restaurant Analysis
 
-## Dataset and method
-Record the supplied dataset filename, source, row/column count, data-cleaning decisions and limitations after running the notebook.
+## Dataset and methodology
 
-## Key findings
-Complete this section from verified notebook output. Do not invent restaurant rankings, rating trends or cuisine preferences.
+- Source: locally available CSV in `data/raw/`.
+- Findings describe this dataset only; they are not automatically generalizable.
 
-## Five recommendations
-1. Add a recommendation supported by a verified result.
-2. Add a recommendation supported by a verified result.
-3. Add a recommendation supported by a verified result.
-4. Add a recommendation supported by a verified result.
-5. Add a recommendation supported by a verified result.
+## Findings
 
-## Limitations
-Document missing values, selection bias, date coverage and any columns whose meanings are unclear.
+- Rows: 9,551; columns: 21.
+- Duplicate rows: 0.
+- Cells missing values: 9.
+- Average restaurant rating: 2.67; median: 3.20; valid ratings: 9,551.
+- City with most listings in this dataset: New Delhi (5,473 listings).
+- Most frequently listed cuisine: North Indian (3,960 mentions).
+- Average Cost for two: median 400.00; mean 1,199.21 (currency/units follow the source dataset).
+- Correlation between rating and votes: 0.314 (descriptive, not causal).
+
+## Outputs
+
+Charts and supporting CSV files are saved in `outputs/`.
