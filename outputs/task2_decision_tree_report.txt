@@ -1,0 +1,13 @@
+Decision Tree
+Accuracy: 0.9778
+ROC-AUC: 0.9937730667646184
+
+              precision    recall  f1-score   support
+
+    Approved       0.99      0.97      0.98       531
+    Rejected       0.95      0.99      0.97       323
+
+    accuracy                           0.98       854
+   macro avg       0.97      0.98      0.98       854
+weighted avg       0.98      0.98      0.98       854
+

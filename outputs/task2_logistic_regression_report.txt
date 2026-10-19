@@ -1,0 +1,13 @@
+Logistic Regression
+Accuracy: 0.9356
+ROC-AUC: 0.9748240658142532
+
+              precision    recall  f1-score   support
+
+    Approved       0.95      0.94      0.95       531
+    Rejected       0.91      0.93      0.92       323
+
+    accuracy                           0.94       854
+   macro avg       0.93      0.93      0.93       854
+weighted avg       0.94      0.94      0.94       854
+
