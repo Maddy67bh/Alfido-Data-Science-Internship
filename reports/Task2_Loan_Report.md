@@ -1,13 +1,25 @@
-# Task 2 — Loan Approval Prediction
+# Loan Approval Prediction
 
-## Dataset and target
-Document the source, sample size, features and confirmed target column.
+Dataset: `loan_approval_dataset.csv`
 
-## Evaluation
-Paste actual held-out classification metrics and confusion matrix from the notebook. Compare with a simple baseline.
+Rows used: 4269
 
-## Threshold recommendation
-Choose only after validation, calibration and review of the costs of false approvals and false rejections. Explain the trade-off. Do not state a threshold without measured evidence.
+Target column: ` loan_status`
 
-## Responsible use
-Discuss data leakage, class imbalance, fairness, explainability and the fact that the model is not a substitute for responsible lending review.
+Holdout accuracy: 0.979
+
+Classification report:
+
+```
+              precision    recall  f1-score   support
+
+    Approved       0.98      0.98      0.98       531
+    Rejected       0.98      0.97      0.97       323
+
+    accuracy                           0.98       854
+   macro avg       0.98      0.98      0.98       854
+weighted avg       0.98      0.98      0.98       854
+
+```
+
+This is a baseline model, not a lending decision system. Review fairness, leakage, and class balance before use.
